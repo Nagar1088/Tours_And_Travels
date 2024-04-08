@@ -10,7 +10,7 @@ class Destinationserializers(serializers.HyperlinkedModelSerializer):
         fields='__all__'
 
 
-class TourPakageserializer(serializers.HyperlinkedModelSerializer):
+class TourPakageserializers(serializers.HyperlinkedModelSerializer):
     TourPakage=serializers.ReadOnlyField()
     class Meta:
         model=TourPakage
@@ -53,7 +53,7 @@ class Transportationserializers(serializers.HyperlinkedModelSerializer):
         fields='__all__'
 
 
-class paymentserializers(serializers.HyperlinkedModelSerializer):
+class Paymentserializers(serializers.HyperlinkedModelSerializer):
     Payment=serializers.ReadOnlyField()
     class Meta:
         model=Payment
